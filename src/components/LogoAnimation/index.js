@@ -18,7 +18,9 @@ const LogoAnimation = () => {
     }, [])
 
     return(
-        <S.Animation ref={animation}></S.Animation>
+        <S.Background>
+            <S.Animation ref={animation}></S.Animation>
+        </S.Background>
     )
 }
 
