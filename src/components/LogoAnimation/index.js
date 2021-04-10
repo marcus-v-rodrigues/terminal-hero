@@ -11,7 +11,7 @@ const LogoAnimation = () => {
         lottie.loadAnimation({
         container: animation.current,
         renderer: 'svg',
-        loop: true,
+        loop: false,
         autoplay: true,
         animationData: require('./animation.json')
         })
@@ -19,7 +19,10 @@ const LogoAnimation = () => {
 
     return(
         <S.Background>
-            <S.Animation ref={animation}></S.Animation>
+            <S.Terminal>
+                <S.Toolbar></S.Toolbar>
+                <S.Animation ref={animation}></S.Animation>
+            </S.Terminal>
         </S.Background>
     )
 }
