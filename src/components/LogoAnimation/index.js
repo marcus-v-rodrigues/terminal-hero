@@ -1,14 +1,19 @@
 import React, { useEffect, useRef } from 'react'
 import lottie from 'lottie-web'
 import gsap from 'gsap'
+import { TextPlugin } from 'gsap/TextPlugin'
 
 import * as S from './styled'
 
 const LogoAnimation = () => {
 
+    gsap.registerPlugin(TextPlugin)
+
     let terminal = useRef(null)
     let toolbar = useRef(null)
     let terminalPrompt = useRef(null)
+    let descriptionRef = useRef(null)
+    let description = 'Sou um cientista da computação'
 
     let timeline = useRef()
 
@@ -28,7 +33,11 @@ const LogoAnimation = () => {
             x: "-150%",
             duration: 0.5
         }, "<")
-        
+        .to(descriptionRef.current, {
+            duration: 1,
+            text: description,
+            ease: "power1.out",
+        }, ">3.5")
     },[])
 
     const animation = useRef(null)
@@ -65,6 +74,7 @@ const LogoAnimation = () => {
                             <S.PromptCursor/>
                         </S.TerminalPrompt>
                         <S.Animation ref={animation}></S.Animation>
+                        <S.Description ref={descriptionRef}/>
                     </S.ContentContainer>
                 </S.Terminal>
             </S.Mask>

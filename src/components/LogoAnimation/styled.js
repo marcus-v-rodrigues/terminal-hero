@@ -93,6 +93,7 @@ export const TerminalPrompt = styled.div`
     left: 1rem;
     display: flex;
     align-items: center;
+    font-size: 1.2em;
 `
 
 export const PromptUser = styled.span`
@@ -108,7 +109,7 @@ export const PromptDollar = styled.span`
 `
 
 export const PromptCursor = styled.span`
-    height: 1rem;
+    height: 1em;
     width: 0.5rem;
     background: white;
     display: block;
@@ -125,14 +126,21 @@ export const PromptCursor = styled.span`
     }
 `
 
-export const Animation = styled.div`
-    width: 45em;
-`
-
 export const ContentContainer = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`
+
+export const Animation = styled.div`
+    width: 45em;
+`
+
+export const Description = styled.p`
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    height: 2rem;
 `
