@@ -12,11 +12,6 @@ const LogoAnimation = () => {
     let terminal = useRef(null)
     let toolbar = useRef(null)
     let terminalPrompt = useRef(null)
-    let descriptionRef = useRef(null)
-    let description = [
-                        'a Computer Scientist + Designer', 
-                        'I like building nice things for the web'
-                    ]
 
     let timeline = useRef()
 
@@ -39,6 +34,12 @@ const LogoAnimation = () => {
     },[])
 
     let textTimeline = useRef()
+
+    let descriptionRef = useRef(null)
+    let description = [
+                        'A Computer Scientist + Designer', 
+                        'I like building nice things for the web'
+                    ]
 
     useEffect(()=>{
         textTimeline.current = gsap.timeline({repeat:-1})
@@ -64,7 +65,7 @@ const LogoAnimation = () => {
         }, ">3")
 
         textTimeline.current.delay(6); 
-    },[])
+    },[description])
 
     const animation = useRef(null)
 
