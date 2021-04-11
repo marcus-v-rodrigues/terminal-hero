@@ -28,11 +28,6 @@ const LogoAnimation = () => {
             x: "-150%",
             duration: 0.5
         }, ">")
-        .from(animation.current, {
-            y: "50%",
-            autoAlpha: 0,
-            duration: 0.5
-        }, ">")
         
     },[])
 
