@@ -30,8 +30,8 @@ const LogoAnimation = () => {
                 </S.Toolbar>
                 <S.ContentContainer>
                     <S.TerminalPrompt>
-                        <S.PromptUser>cody@ubuntu:</S.PromptUser><S.PromptLocation>~</S.PromptLocation><S.PromptDollar>$</S.PromptDollar>
-                        <span class="Prompt__cursor"></span>
+                        <S.PromptUser>marcus@ubuntu:</S.PromptUser><S.PromptLocation>~</S.PromptLocation><S.PromptDollar>$</S.PromptDollar>
+                        <S.PromptCursor/>
                     </S.TerminalPrompt>
                     <S.Animation ref={animation}></S.Animation>
                 </S.ContentContainer>

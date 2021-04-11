@@ -102,6 +102,24 @@ export const PromptDollar = styled.span`
     color: #ddd;
 `
 
+export const PromptCursor = styled.span`
+    height: 1rem;
+    width: 0.5rem;
+    background: white;
+    display: block;
+    margin-left: 0.rem;
+    animation: 400ms ease infinite alternate blink;
+  
+    @keyframes blink {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+`
+
 export const Animation = styled.div`
     width: 45em;
 `
