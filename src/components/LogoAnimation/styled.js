@@ -22,7 +22,7 @@ export const Terminal = styled.div`
     width: 80em;
     height: 40em;
     background: rgba(56, 4, 40, .9);
-    box-shadow: 2px 4px 10px rgba(0,0,0,.5);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
     border-radius: 1rem 1rem 0 0;
 `
 
@@ -38,9 +38,14 @@ export const Toolbar = styled.div`
    
 `
 
+export const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+`
+
 export const Button = styled.button`
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     
     box-sizing: border-box;
     border-radius: 100%;
@@ -64,7 +69,7 @@ export const Button = styled.button`
         outline: none;
     }
 
-    .exit {
+    &.exit {
         background: #f25d2b;
         background: linear-gradient(#f37458 0%, #de4c12 100%);
         background-clip: padding-box;
@@ -76,6 +81,25 @@ export const UserText = styled.p`
     font-size: 1em;
     line-height: 1em;
     margin: 0 0 0.2em 0.2em;
+`
+
+export const TerminalPrompt = styled.div`
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    display: flex;
+`
+
+export const PromptUser = styled.span`
+    color: #87d441;
+`
+
+export const PromptLocation = styled.span`
+    color: #6d85a9;
+`
+
+export const PromptDollar = styled.span`
+    color: #ddd;
 `
 
 export const Animation = styled.div`

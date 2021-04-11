@@ -21,12 +21,18 @@ const LogoAnimation = () => {
         <S.Background>
             <S.Terminal>
                 <S.Toolbar>
-                    <S.Button>&#10005;</S.Button>
-                    <S.Button>&#9472;</S.Button>
-                    <S.Button>&#9723;</S.Button>
+                    <S.ButtonContainer>
+                        <S.Button className="exit">&#10005;</S.Button>
+                        <S.Button>&#9472;</S.Button>
+                        <S.Button>&#9723;</S.Button>
+                    </S.ButtonContainer>
                     <S.UserText>marcus@ubuntu:~</S.UserText>
                 </S.Toolbar>
                 <S.ContentContainer>
+                    <S.TerminalPrompt>
+                        <S.PromptUser>cody@ubuntu:</S.PromptUser><S.PromptLocation>~</S.PromptLocation><S.PromptDollar>$</S.PromptDollar>
+                        <span class="Prompt__cursor"></span>
+                    </S.TerminalPrompt>
                     <S.Animation ref={animation}></S.Animation>
                 </S.ContentContainer>
             </S.Terminal>
