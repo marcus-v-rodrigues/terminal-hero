@@ -20,7 +20,12 @@ const LogoAnimation = () => {
     return(
         <S.Background>
             <S.Terminal>
-                <S.Toolbar></S.Toolbar>
+                <S.Toolbar>
+                    <S.Button>&#10005;</S.Button>
+                    <S.Button>&#9472;</S.Button>
+                    <S.Button>&#9723;</S.Button>
+                    <S.UserText>marcus@ubuntu:~</S.UserText>
+                </S.Toolbar>
                 <S.ContentContainer>
                     <S.Animation ref={animation}></S.Animation>
                 </S.ContentContainer>

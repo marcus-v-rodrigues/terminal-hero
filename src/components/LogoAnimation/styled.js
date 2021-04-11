@@ -29,9 +29,53 @@ export const Terminal = styled.div`
 export const Toolbar = styled.div`
     background: linear-gradient(#504b45 0%,#3c3b37 100%);
     width: 100%;
+    height: 2em;
     padding: 0 8px;
     box-sizing: border-box;
-    height: 2em;
+
+    display: flex;
+    align-items: center;
+   
+`
+
+export const Button = styled.button`
+    width: 1.5em;
+    height: 1.5em;
+    
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: none;
+    margin-right: 4px;
+    padding: 0;
+    font-size: 0.5em;
+
+    background: linear-gradient(#7d7871 0%, #595953 100%);
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 1px 0px #41403A,0px 1px 1px 0px #474642;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+    }
+
+    .exit {
+        background: #f25d2b;
+        background: linear-gradient(#f37458 0%, #de4c12 100%);
+        background-clip: padding-box;
+    }
+`
+
+export const UserText = styled.p`
+    color: #d5d0ce;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0 0 0.2em 0.2em;
 `
 
 export const Animation = styled.div`
