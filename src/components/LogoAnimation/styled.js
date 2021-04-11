@@ -88,6 +88,7 @@ export const TerminalPrompt = styled.div`
     top: 3rem;
     left: 1rem;
     display: flex;
+    align-items: center;
 `
 
 export const PromptUser = styled.span`
@@ -107,7 +108,7 @@ export const PromptCursor = styled.span`
     width: 0.5rem;
     background: white;
     display: block;
-    margin-left: 0.rem;
+    margin-left: 0.5rem;
     animation: 400ms ease infinite alternate blink;
   
     @keyframes blink {
