@@ -9,15 +9,18 @@ export const Background = styled.section`
     background: linear-gradient(45deg, #57003f 0%,#f57453 100%);
 `
 
-export const Terminal = styled.div`
+export const Mask = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+`
 
+export const Terminal = styled.div`
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     
     width: 80em;
     height: 40em;
