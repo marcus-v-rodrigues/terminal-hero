@@ -15,7 +15,7 @@ const LogoAnimation = () => {
     useEffect(()=>{
         timeline.current = gsap.timeline()
         .from(terminal.current, {
-            y: "100%",
+            y: "120%",
             delay: 1,
             ease: "power2.out",
             duration: 1
@@ -27,7 +27,7 @@ const LogoAnimation = () => {
         .from(terminalPrompt.current, {
             x: "-150%",
             duration: 0.5
-        }, ">")
+        }, "<")
         
     },[])
 
@@ -42,7 +42,7 @@ const LogoAnimation = () => {
                 autoplay: true,
                 animationData: require('./animation.json')
             })
-        }, 3000)
+        }, 2000)
     }, [])
 
     return(

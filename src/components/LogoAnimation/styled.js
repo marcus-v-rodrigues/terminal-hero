@@ -10,6 +10,7 @@ export const Background = styled.section`
 `
 
 export const Mask = styled.div`
+    padding: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
