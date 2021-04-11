@@ -21,7 +21,9 @@ const LogoAnimation = () => {
         <S.Background>
             <S.Terminal>
                 <S.Toolbar></S.Toolbar>
-                <S.Animation ref={animation}></S.Animation>
+                <S.ContentContainer>
+                    <S.Animation ref={animation}></S.Animation>
+                </S.ContentContainer>
             </S.Terminal>
         </S.Background>
     )
